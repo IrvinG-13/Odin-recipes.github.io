@@ -1,17 +1,29 @@
 body{
-    width: 500px;
-    margin: 0 auto;
     background-color: rgb(248, 238, 222);
     font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 h1{
     text-align: center;
     font-size: 40px;
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
 }
 main{
     align-items: center;
-    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 img{
@@ -22,4 +34,53 @@ img{
 
 a{
     text-decoration: none;
+}
+.img-container{
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+figcaption{
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+.ingredients{
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+}
+
+.step{
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+}
+
+li{
+    text-align: justify;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .step{
+        width: 500px;
+    }
+
+    img{
+        width: 400px;
+        height: 400px;
+    }
 }
